@@ -1,0 +1,168 @@
+/* Import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background: #000;
+    color: rgb(186, 197, 197);
+}
+
+section{
+    padding: 2em 0;
+}
+/* general styles */
+.container {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+video{
+    width: 100%;
+    height: 100%;    
+}
+
+/* Header Section */
+header{
+    text-align: center;
+    color: #fff;
+    padding: 2em 0;
+}
+
+/* Intro Section */
+.intro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro span{
+    color: aquamarine;
+}
+
+.intro h1{
+    font-size: 2rem;
+}
+
+.intro-vid{
+    width: 100%;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.intro-grid{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+}
+
+/* League Section */
+
+.desc{
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 2em 0;
+}
+.league-grid{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat( auto-fit, minmax(100px, auto) );
+}
+
+.leagues{
+    padding: 2em 0;
+    text-align: center;
+    color: orangered;
+    border-radius: 10px;
+    border: 3px solid rgba(249, 249, 249, 0.1);
+    box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+    cursor: pointer;
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.leagues:hover{
+    box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px, rgb(0 0 0 / 72%) 0px 30px 22px -10px;
+    transform: scale(1.05);
+    border-color: rgba(249, 249, 249, 0.8);
+}
+
+
+/* Swiper Card Styling */
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 255, 255, 0.119);
+    border-radius: 25px;
+    padding: 1rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .7rem;
+    border: 2px solid transparent;
+
+}
+
+.card:hover{
+    border: 2px solid rgba(172, 255, 47, 0.652);
+}
+
+
+.cover-img{
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    padding: 1em .2em;
+    border-radius: 13px;
+}
+
+.watch-btn{
+    background: rgb(7, 7, 7);
+    color: #fff;
+    padding: .5rem;
+    margin-top: .6em;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    list-style: none;
+    border: 2px solid orangered;
+}
+
+.watch-btn:hover{
+    background: none;
+    border: 3px solid black;
+    color: orangered;
+}
+
+/* Styles for Swiper  */
+.swiper-button-next, .swiper-button-prev{
+    background-color: rgb(0, 0, 0);
+	color: rgb(205, 23, 23);
+}
+
+.swiper-button-prev:after {
+	font-weight: 700;
+}
+
+.swiper-button-next:after {
+	font-weight: 700;
+}
+
+
+/* Footer Style */
+footer{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.link{
+    color: orangered;
+}
