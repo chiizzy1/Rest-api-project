@@ -40,7 +40,7 @@ function getData(){
     console.log(data.response);
     let availableMatchHighlights = data.response
     availableMatchHighlights.forEach((match, index) => {
-      console.log(match);
+      // console.log(match);
       appendDiv(match)
     });
   })
@@ -61,40 +61,41 @@ div.innerHTML = `
       
     ` 
 const competition = match.competition;
+let display = document.querySelector('.view-carousel')
 switch (competition) {
   case 'ENGLAND: Premier League':
         document.querySelector('.epl').addEventListener('click', ()=>{
-            document.querySelector('.view-carousel').appendChild(div)
+            display.append(div)
         })
         break;
 
   case 'GERMANY: Bundesliga':
         document.querySelector('.bundesliga').addEventListener('click', ()=>{
-            document.querySelector('.view-carousel').appendChild(div)
+            display.append(div)
         })
         break;
 
   case 'FRANCE: Ligue 1':
         document.querySelector('.league-1').addEventListener('click', ()=>{
-            document.querySelector('.view-carousel').appendChild(div)
+            display.append(div)
         })
         break;
 
   case 'ITALY: Serie A':
         document.querySelector('.seria-a').addEventListener('click', ()=>{
-            document.querySelector('.view-carousel').appendChild(div)
+            display.append(div)
         })
         break;
 
   case 'SPAIN: La Liga':
         document.querySelector('.la-liga').addEventListener('click', ()=>{
-            document.querySelector('.view-carousel').appendChild(div)
+            display.append(div)
         })
         break;
 
   default:
         document.querySelector('.others').addEventListener('click', ()=>{
-          document.querySelector('.view-carousel').appendChild(div)
+            display.append(div)
         })
 }
 } 
